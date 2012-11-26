@@ -1,0 +1,26 @@
+Downloading/unpacking htmlparser
+  Getting page http://pypi.python.org/simple/htmlparser
+  Could not fetch URL http://pypi.python.org/simple/htmlparser: HTTP Error 404: Not Found (htmlparser does not have any releases)
+  Will skip URL http://pypi.python.org/simple/htmlparser when looking for download links for htmlparser
+  Getting page http://pypi.python.org/simple/
+Exception:
+Traceback (most recent call last):
+  File "/usr/lib/python2.6/dist-packages/pip.py", line 252, in main
+    self.run(options, args)
+  File "/usr/lib/python2.6/dist-packages/pip.py", line 408, in run
+    requirement_set.install_files(finder, force_root_egg_info=self.bundle)
+  File "/usr/lib/python2.6/dist-packages/pip.py", line 1750, in install_files
+    url = finder.find_requirement(req_to_install, upgrade=self.upgrade)
+  File "/usr/lib/python2.6/dist-packages/pip.py", line 996, in find_requirement
+    url_name = self._find_url_name(Link(self.index_urls[0]), url_name, req)
+  File "/usr/lib/python2.6/dist-packages/pip.py", line 1075, in _find_url_name
+    for link in page.links:
+  File "/usr/lib/python2.6/dist-packages/pip.py", line 2220, in links
+    url = self.clean_link(urlparse.urljoin(self.url, url))
+  File "/usr/lib/python2.6/urlparse.py", line 210, in urljoin
+    urlparse(url, bscheme, allow_fragments)
+  File "/usr/lib/python2.6/urlparse.py", line 108, in urlparse
+    tuple = urlsplit(url, scheme, allow_fragments)
+  File "/usr/lib/python2.6/urlparse.py", line 141, in urlsplit
+    cached = _parse_cache.get(key, None)
+KeyboardInterrupt
