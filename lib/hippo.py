@@ -23,8 +23,8 @@ except ImportError, e:
 class hippo:
 	def __init__(self,flist=None):
 		self._config = ConfigParser.ConfigParser()
-		self._config.read("/opt/bookworm/settings/settings.cfg")
-#		self._config.read(os.getcwd() + "/settings/settings.cfg")
+#		self._config.read("/opt/bookworm/settings/settings.cfg")
+		self._config.read(os.getcwd() + "/settings/settings.cfg")
 		ll = self._config.get("general","logging").upper()
 		self._log = utility.logger(self.__class__.__name__,ll)
 
